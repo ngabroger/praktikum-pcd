@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="imgLabel">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>80</y>
+      <width>341</width>
+      <height>231</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="loadButton">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>330</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>load image</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuMedianFilter">
+    <property name="title">
+     <string>Menu</string>
+    </property>
+    <addaction name="actionMedianFilter"/>
+    <addaction name="actionMaxFilter"/>
+   </widget>
+   <widget class="QMenu" name="menuLOCAL_THERESHOLDING">
+    <property name="title">
+     <string>local theresholding</string>
+    </property>
+    <addaction name="actionbinary"/>
+    <addaction name="actionBinary_Inverse"/>
+    <addaction name="actionTrunch"/>
+    <addaction name="actionTo_Zero"/>
+    <addaction name="actionTo_Zero_Invers"/>
+   </widget>
+   <widget class="QMenu" name="menuAdaptive_Thereshholding">
+    <property name="title">
+     <string>Adaptive Theresholding</string>
+    </property>
+    <addaction name="actionMean_Thresholding"/>
+    <addaction name="actionGaussian"/>
+    <addaction name="actionOtsu_Thresholding"/>
+   </widget>
+   <addaction name="menuMedianFilter"/>
+   <addaction name="menuLOCAL_THERESHOLDING"/>
+   <addaction name="menuAdaptive_Thereshholding"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionMedianFilter">
+   <property name="text">
+    <string>MedianFilter</string>
+   </property>
+  </action>
+  <action name="actionMaxFilter">
+   <property name="text">
+    <string>MaxFiltering</string>
+   </property>
+  </action>
+  <action name="actionbinary">
+   <property name="text">
+    <string>Binary</string>
+   </property>
+  </action>
+  <action name="actionBinary_Inverse">
+   <property name="text">
+    <string>Binary Invers</string>
+   </property>
+  </action>
+  <action name="actionTrunch">
+   <property name="text">
+    <string>Trunch</string>
+   </property>
+  </action>
+  <action name="actionTo_Zero">
+   <property name="text">
+    <string>To Zero</string>
+   </property>
+  </action>
+  <action name="actionTo_Zero_Invers">
+   <property name="text">
+    <string>To Zero Invers</string>
+   </property>
+  </action>
+  <action name="actionMean_Thresholding">
+   <property name="text">
+    <string>Mean Theresholding</string>
+   </property>
+  </action>
+  <action name="actionGaussian">
+   <property name="text">
+    <string>Gaussian Theresholding</string>
+   </property>
+  </action>
+  <action name="actionOtsu_Thresholding">
+   <property name="text">
+    <string>Otsu Theresholding</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
