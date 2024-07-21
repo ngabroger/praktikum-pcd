@@ -22,7 +22,7 @@ class ShowImage(QMainWindow):
 
     def loadClicked(self):
         # Load image from a predefined path
-        filename = 'images.jpg'
+        filename = 'gambar.jpg'
         self.image = cv2.imread(filename)
         if self.image is not None:
             self.displayImage()

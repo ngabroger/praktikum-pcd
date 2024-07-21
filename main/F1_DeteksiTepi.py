@@ -23,7 +23,7 @@ class ShowImage(QMainWindow):
 
     @pyqtSlot()
     def loadClicked(self):
-        self.loadImage('images.jpg')
+        self.loadImage('gambar.jpg')
 
 
 
